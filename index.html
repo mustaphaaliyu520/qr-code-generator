@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <section class="box" aria-labelledby="page-title">
+            <h1 id="page-title">QR Code Generator</h1>
+            <div class="qrcode" aria-label="Generated QR code"></div>
+            <form id="qr-form">
+                <label for="qr-input">Text or URL</label>
+                <input id="qr-input" type="text" placeholder="Paste a link or enter text" autocomplete="off">
+                <button type="submit">Generate QR Code</button>
+            </form>
+            <p class="message" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+    <script src="qrcode.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
